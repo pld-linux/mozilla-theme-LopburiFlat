@@ -14,7 +14,7 @@ URL:		http://themes.mozdev.org/themes/lopburi.html
 Requires(post,postun):	textutils
 Requires:	mozilla >= 1.5b
 BuildArch:	noarch
-BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_chromedir	%{_datadir}/mozilla/chrome
 
