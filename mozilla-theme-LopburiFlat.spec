@@ -1,17 +1,18 @@
 Summary:	Super-flat Mozilla theme
 Summary(pl):	Super p³aski motyw dla Mozilli
 Name:		mozilla-theme-LopburiFlat
-Version:	2.1
+Version:	3.0
 %define		_realname	lopburi
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://downloads.us-east1.mozdev.org/themes/%{_realname}-1.jar
-# Source0-md5:	f25152d12066bca934bc4d8c7d9887cc
+Source0:	http://downloads.uk1.mozdev.org/rsync/themes/themes/%{_realname}12.xpi
+# Source0-md5:	2b6ee74c67f25b0c71318c96e232b327
 Source1:	%{_realname}-installed-chrome.txt
-URL:		http://themes.mozdev.org/skins/lopburi.html
+URL:		http://themes.mozdev.org/themes/lopburi.html
+BuildRequires:	unzip
 Requires(post,postun):	textutils
-Requires:	mozilla >= 1.0-7
+Requires:	mozilla >= 1.2.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
@@ -29,7 +30,9 @@ Super p³aski motyw dla Mozilli.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_chromedir}
 
-install %{SOURCE0} $RPM_BUILD_ROOT%{_chromedir}/%{_realname}.jar
+unzip %{SOURCE0} 19410-%{_realname}.jar -d $RPM_BUILD_ROOT%{_chromedir}
+mv $RPM_BUILD_ROOT%{_chromedir}/19410-%{_realname}.jar $RPM_BUILD_ROOT%{_chromedir}/%{_realname}.jar
+
 install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
 
 %clean
