@@ -12,7 +12,7 @@ Source0:	http://downloads.mozdev.org/themes/themes/%{_realname}.jar
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://themes.mozdev.org/themes/lopburi.html
 Requires(post,postun):	textutils
-Requires:	mozilla >= 1.5b
+Requires:	mozilla >= 4:1.5b
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
