@@ -1,5 +1,5 @@
-Summary:	Super-flat mozilla theme
-Summary(pl):	Super p³aski temat dla mozilli
+Summary:	Super-flat Mozilla theme
+Summary(pl):	Super p³aski temat dla Mozilli
 Name:		mozilla-theme-LopburiFlat
 Version:	2.1
 %define		_realname	lopburi
@@ -17,10 +17,10 @@ BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 %define		_chromedir	%{_libdir}/mozilla/chrome
 
 %description
-Super-flat mozilla theme
+Super-flat Mozilla theme.
 
 %description -l pl
-Super p³aski temat dla mozilli
+Super p³aski temat dla Mozilli.
 
 %prep
 
