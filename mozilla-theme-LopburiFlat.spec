@@ -7,6 +7,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://downloads.mozdev.org/themes/%{_realname}-1.jar
+# Source0-md5:	db711a8b442a47e3251cbbac22ecc840
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://themes.mozdev.org/skins/lopburi.html
 Requires(post,postun):	textutils
