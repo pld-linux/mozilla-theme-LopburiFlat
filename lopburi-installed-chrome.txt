@@ -5,4 +5,3 @@ skin,install,url,jar:resource:/chrome/lopburi.jar!/editor/
 skin,install,url,jar:resource:/chrome/lopburi.jar!/messenger/
 skin,install,url,jar:resource:/chrome/lopburi.jar!/navigator/
 skin,install,url,jar:resource:/chrome/lopburi.jar!/chatzilla/
-skin,install,url,jar:resource:/chrome/lopburi.jar!/forms/
