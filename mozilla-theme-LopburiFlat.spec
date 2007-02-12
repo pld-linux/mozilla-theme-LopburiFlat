@@ -1,5 +1,5 @@
 Summary:	Super-flat Mozilla theme
-Summary(pl):	Super p≥aski motyw dla Mozilli
+Summary(pl.UTF-8):   Super p≈Çaski motyw dla Mozilli
 Name:		mozilla-theme-LopburiFlat
 %define		_realname	lopburi
 Version:	3.5
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Super-flat Mozilla theme.
 
-%description -l pl
-Super p≥aski motyw dla Mozilli.
+%description -l pl.UTF-8
+Super p≈Çaski motyw dla Mozilli.
 
 %prep
 
